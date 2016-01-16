@@ -1,4 +1,4 @@
-package com.blob;
+package com.blob.config;
 
 import javax.annotation.Resource;
 

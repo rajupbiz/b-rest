@@ -25,6 +25,8 @@ public class TestCtrl {
 	public @ResponseBody Contact getContact(@PathVariable Long id){
 		System.out.println("  id ===>   "+id);
 		Contact contact = contactDao.findOne(id);
+		contact.setId(id);
+		
 		return contact;
 	}
 	
