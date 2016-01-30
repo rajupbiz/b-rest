@@ -1,4 +1,4 @@
-package com.blob.restctrl;
+package com.blob.web.rest;
 
 import java.util.List;
 
