@@ -16,7 +16,7 @@ import com.blob.model.Contact;
 
 @RestController
 @RequestMapping(value="/contact")
-public class TestCtrl {
+public class TestCtrl extends AbstractCtrl {
 	
 	@Resource
 	private ContactDao contactDao;
@@ -32,6 +32,9 @@ public class TestCtrl {
 	
 	@RequestMapping(value="", method=RequestMethod.GET, produces=MediaType.APPLICATION_JSON_VALUE)
 	public @ResponseBody List<Contact> getAllContacts(){
+		
+		traceAction("getAllContacts .. ");
+		
 		System.out.println("  getAllContacts ===>   ");
 		List<Contact> contacts = contactDao.findAll();
 		return contacts;
