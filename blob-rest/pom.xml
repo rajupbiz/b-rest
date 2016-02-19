@@ -4,10 +4,10 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.blob</groupId>
-	<artifactId>blob-rest</artifactId>
+	<artifactId>blob-server</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 
-	<name>blob-rest</name>
+	<name>blob-server</name>
 	<description>Demo project for Spring Boot</description>
 
 	<parent>
@@ -32,14 +32,10 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-data-rest</artifactId>
 		</dependency>
-		<dependency>
+		<!-- <dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-jersey</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-security</artifactId>
-		</dependency>
+		</dependency> -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-actuator</artifactId>
@@ -55,24 +51,6 @@
 			<scope>test</scope>
 		</dependency>
 		<!-- Spring framework dependencies ends here -->
-
-		<!-- Add front-end dependencies here -->
-		<dependency>
-			<groupId>org.webjars</groupId>
-			<artifactId>angularjs</artifactId>
-			<version>1.5.0-rc.0</version>
-		</dependency>
-		<dependency>
-			<groupId>org.webjars</groupId>
-			<artifactId>bootstrap</artifactId>
-			<version>3.3.6</version>
-		</dependency>
-		<dependency>
-			<groupId>org.webjars</groupId>
-			<artifactId>font-awesome</artifactId>
-			<version>4.5.0</version>
-		</dependency>
-		<!-- Front-end dependencies ends here -->
 
 		<dependency>
 			<groupId>mysql</groupId>

@@ -1,24 +1,13 @@
 package com.blob.web.rest;
 
-import java.util.List;
-
-import javax.annotation.Resource;
-
-import org.springframework.http.MediaType;
-import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.blob.dao.ContactDao;
-import com.blob.model.Contact;
-
 @RestController
-@RequestMapping(value="/contact")
+@RequestMapping(value="/test")
 public class TestCtrl extends AbstractCtrl {
 	
-	@Resource
+	/*@Resource
 	private ContactDao contactDao;
 
 	@RequestMapping(value="/{id}", method=RequestMethod.GET, produces=MediaType.APPLICATION_JSON_VALUE)
@@ -48,7 +37,7 @@ public class TestCtrl extends AbstractCtrl {
 			c = contactDao.save(c);
 		}
 		return c.getId();
-	}
+	}*/
 	
 	/*@RequestMapping(value="/", method=RequestMethod.GET, produces=MediaType.APPLICATION_JSON_VALUE)
 	public ResponseEntity<Contact> hello(){
